@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentxaxssaxxsa</title>
+</head>
+<Style>
+    /* - - - - - - - - < 🐶 > : ALL   - - - -- - - -   */
+    * { margin: 0;  padding: 0; }  
+    a { color: #fff; text-decoration: none; transition: 0.3s;}  
+    a:hover { opacity: 0.7;}
+    /* - - - - - - - - < /🐶 > : ALL   - - - -- - - -   */
+
+    
+    /* - - - - - - - - <🐶> : NOTBOOK BAR   - - - -- - - - */
+    
+        @media ( min-width: 901px ) {
+            
+            /* - - - <🐶> : Basicos   - - - */ 
+                .logo { font-size: 24px; text-transform: uppercase; letter-spacing: 4px;}
+                nav { display: flex;  justify-content: space-around; align-items: center; font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif; background: #23232e; height: 8vh; }
+            /* - - - <🐶> : Basicos   - - - */
+            
+            .nav-list { list-style: none; display: flex; }
+            .nav-list li { letter-spacing: 3px; margin-left: 32px; }
+
+            /* - - - <🐶> : Other Items   - - - */ 
+                section {
+                    /* flex-flow: column wrap; */
+                    /* flex-direction: column ; */
+                    /* align-items: flex-start; */
+                    gap: 10px;
+                    BACKGROUND-COLOR: BLUEVIOLET;
+                    width: 30%;
+                    max-height: 400px;
+                    /* max-height: 60%;*/
+                    border-radius: 20px;
+                    display: inline-block;
+                    text-align: center; /* alinha o texto*/
+                    overflow: hidden; 
+                    overflow-y: scroll;
+                }
+            /* - - - </🐶> : Other Items   - - - */
+
+        }
+    
+    /* - - - - - - - - </🐶> : NOTBOOK BAR  - - - -- - - - */
+      
+    
+    /* - - - - - - - - < 🐶 > : Celular   - - - -- - - -   */
+        
+        @media ( min-width: 901px ) {
+            /* menu bolinha  */
+            .mobile-menu { display: none;  }  /* Desativa o Mobile Menu  */
+
+        }
+
+        @media (max-width: 900px) {
+            .mobile-menu { display: none;  }  /* Desativa o Mobile Menu  */
+            /* - - - <🐶> : Basicos   - - - */ 
+                .logo { font-size: 24px; text-transform: uppercase; letter-spacing: 4px;}
+                nav { 
+                    display: flex;  justify-content: space-around; align-items: center; 
+                    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif; 
+                    background: #23232e; height: 8vh; 
+                }
+            /* - - - <🐶> : Basicos   - - - */
+ 
+            /* <🐼> MENU BOLINHA  */
+                .nav-list.active { transform: translateX(0); }
+                /* chegada do menu 0 e 50  da direita  para esquerda */
+                @keyframes navLinkFade { from { opacity: 0; transform: translateX(0px); } to { opacity: 1; transform: translateX(0); } }
+                 
+                .mobile-menu div { 
+                    width: 32px; 
+                    height: 2px; 
+                    background: #fff; 
+                    margin: 8px; 
+                    transition: 0.3s; 
+                }
+                .nav-list { list-style: none; display: flex; }
+                .nav-list li { letter-spacing: 3px; margin-right: 0px; }
+                /* Transforma num X */
+                    .mobile-menu.active .line1 { transform: rotate(-45deg) translate(-8px, 8px); }
+                    .mobile-menu.active .line2 { opacity: 0;}
+                    .mobile-menu.active .line3 { transform: rotate(45deg) translate(-5px, -7px);}
+                /* Transforma Num X */    
+                .mobile-menu { cursor: pointer; }  
+                
+                
+            /* </🐼> MENU BOLINHA  */
+            
+            
+            body { overflow-x: hidden; }
+            .nav-list { 
+                position: absolute; 
+                top: 8vh; 
+                left: 0; /* Posição na Barra */
+                width: 20vw; 
+                height: 92vh; 
+                background: #23232e; 
+                flex-direction: column; 
+                align-items: center; 
+                justify-content: space-around;  /* espaço entre space-around   */
+                transform: translateX(-300%); 
+                transition: transform 0.3s ease-in; 
+            }
+            .nav-list li { margin-left: 0; opacity: 0; } 
+            .mobile-menu { display: block; }
+
+
+            /* - - - < 🐶> : Other Items   - - - */ 
+                section {
+                    flex-direction: row ;
+                    /* align-items: flex-start; */
+                    BACKGROUND-COLOR: BLUEVIOLET;
+                    gap: 10px;
+                    width: 100%;
+                    max-height: 400px;
+                    /* max-height: 60%;*/
+                    border-radius: 20px;
+                    flex-direction: column;
+                    text-align: center; /* alinha o texto*/
+                    overflow: hidden; 
+                    overflow-y: scroll;
+
+                }
+            /* - - - </🐶> : Other Items   - - - */
+
+        }
+    /* - - - - - - - - < 🐶 > : Celular   - - - -- - - -   */
+  
+    /* - - - - - - - - <🐶> : Style PAG   - - - -- - - -   */
+        main {
+        
+            background-color: rgb(0, 0, 0);
+            /* background: url(""); */
+            /* background-repeat:repeat url("") ; */
+            background-size: cover ; 
+            height: 100%;
+
+        }
+    /* - - - - - - - - </🐶> : Style PAG  - - - -- - - -   */    
+
+
+    /* Navbar */   
+
+    /* Flex Items  */
+    .conteiner{ display: flex; gap: 4px; width: 100%; flex-wrap: wrap; }
+    .flex-items{ display: flex; font-size: 24px; height: 60px; align-items: center; justify-content: center; flex-grow:1 ; flex-basis: 100px ; }
+    /* Flex Items */
+
+    /* - - - - - - - - </🐶> : NOTBOOK BAR  - - - -- - - - */
+   
+
+    
+
+    Body {
+        
+        align-items: start;
+        /* 
+        display: flex;
+        flex-direction:row; 
+        align-items: start;
+        justify-content: center;
+        padding: 20px ;
+        width: 100% ;
+        */ 
+        /*  background: url("bg.jpg") no-repeat center center; justify-self:start;   */
+         
+    }
+    
+    
+    /* - - - <🐼> : Other Items   - - - */
+    input[type=text] {
+        BACKGROUND-COLOR: rgb(255, 255, 255);
+    }
+
+    input[type=date] {
+        BACKGROUND-COLOR: rgb(255, 255, 255);
+    }
+
+    input[type=time] {
+        BACKGROUND-COLOR: rgb(255, 255, 255);
+    }
+    /* - - - </🐼> : Other Items   - - - */
+
+   /* H6{ color: aliceblue; width="200%" height ="200%" } */
+
+    .containery {
+        height:30px ;  
+        width: 30px ;
+    }
+
+    .containeryxi {
+       color: #fff;
+       text-align: center;
+    }
+
+    .Texto_DA_CAIXA {
+        width: 80% ;
+        height: auto;
+        text-align: start;
+        overflow: hidden; 
+        overflow-y: scroll;
+        padding: 12px 20px;
+        margin: 8px 0;
+        background-color: #fff;
+       /* box-sizing: border-box; */
+    }
+
+    .dive_tarefas {
+        BACKGROUND-COLOR: rgb(166, 14, 204);
+        width: 95%;
+        max-height: 400px;
+        /* max-height: 60%;*/
+        border-radius: 20px;
+        display: inline-block;
+        text-align: center; /* alinha o texto*/
+        overflow: hidden; 
+        overflow-y: scroll;
+    }
+
+</Style>
+
+<body>
+    
+  
+    <!-- Navbar -->
+        <header>
+            <nav>
+                <div class="mobile-menu"> <div class="line1"></div> <div class="line2"></div> <div class="line3"></div> </div>
+                <a class="logo" href="/"> 🐼 TASK </a>
+                <ul class="nav-list">
+                    <li> <a href="#">Início</a></li>
+                    <li> <a href="#">Sobre</a></li>
+                    <li> <a href="#">Projetos</a></li>
+                    <li> <a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!-- Navbar -->
+    
+
+    <main>
+        
+        <h1 class="containeryxi"> 😬 Power Of The Bald 👨‍🦲 </h1>
+        <br>
+        
+        💂
+        <section>
+
+            <h1> DATA </h1>
+            
+            <br> 
+            DAY DATABASE : 📅➡️ <input type="date" type="date" id="daty10" /> ➡️ <input type="radio" value ="GYM_OMEGA_LILY = Register_Of_Day" id="GYM_OMEGA_LILY" onclick="JSON_Read_Register_Lily()">  
+            <br>
+            <div id ="kuiojhg"> <strong> year month and day </strong> </div>
+            <div id ="uiojhg"> <strong> Year </strong> </div> 
+            <br> 
+            <br> 
+            ALL DATABASE : 🐬➡️ <input type="radio" value ="GYM_OMEGA_LILY = Register_Of_Day" id="GYM_OMEGA_LILY" onclick="JSON_Read_Register_Lily_ALL()">
+            <br><br>
+            RELOAD THE PAGE : 🔃➡️ <input type="radio" value ="GYM_OMEGA_LILY = Register_Of_Day" id="refresh_pag" onclick="refresh_pag()">
+
+        </section>
+        
+       
+        💂
+        <section>
+            <h1> Nova Tarefa </h1>
+            <!--  Novaaaaaaaaa Tarefaaaaaaaaaaaaaaaaaaa   -->
+            <div class="dive_tarefas" id="" >
+                <details> 
+                <summary> 
+                👨‍💻➡️ <input type="text" id="jason_name_of_task_two" > <br>
+                📅➡️ <input type="date" type="date" id="daty15"/> <br> 
+                🕒➡️ <input type="time" id="timy15"> <br>
+                
+                <!--  SSTATUS : Emojis : Give Whatever Meaning You Want 1 > 10  jason_Infy_of_task -->
+                <br>
+                <input value ="✍️" type="button" onclick="" id="sstatus_1">   <!--  Request_Details    -->
+                <input value ="👨‍💻" type="button" onclick="" id="sstatus_2">   <!--      Build_         -->
+                <input value ="💌" type="button" onclick="" id="sstatus_3">   <!--  Sent_To_Client     -->
+                <input value ="📧" type="button" onclick="" id="sstatus_4">   <!--  Sent_To_Production -->
+                <input value ="🚚" type="button" onclick="" id="sstatus_5">   <!--     IN_Production   -->
+                <input value ="📦" type="button" onclick="" id="sstatus_6">   <!--      STORED         -->
+                <input value ="🐼" type="button" >                            <!--     Anything        -->
+                
+                </summary>
+    
+             
+                <!--  Detailed Text  -->
+                <textarea cols="30" rows="5" class="Texto_DA_CAIXA" id="jason_Infy_of_task_two" >  </textarea>    
+            
+                </details>
+                <!--    Nova  Atualizar         -->
+                <br> [💌] NEW TASK  : <br>  <input  type="radio" value ="🤝" class="containery" id="Atualizar${index}${pkmc}" onclick="JsonSaveRegister_KJJ()" > <br>  
+                <!--     Nova Remove    :   -->
+                <br> [☠️] ANYTHING : <br>  <input  type="radio" value ="☠️" class="containery" id="Delet${index}${pkmd} onclick="" > <br>
+
+            </div>
+        </section>
+
+        <br> <br>
+
+        💂
+        <section>
+            <h1 > Register_Of_Day </h1>
+            <br>
+            <p id="Register_Of_Day"> ... </p>
+            <br>
+            <br>
+            <br>
+        </section>
+
+        💂
+        <section>
+            <h1> Register_Of_ANO </h1>
+            <br>
+            <p id="Register_Of_ANO"> ... </p>
+            <br> 
+        </section>
+        
+        
+        <br> <br> <br> <br>
+        💂
+        <section>
+            🕒
+            <h1> Footer </h1>
+            <div class="dive_tarefas" id="" >
+                <details> 
+                <summary> 
+                   o pequeno principe  Pagina 4 :                          
+                
+                </summary>
+                <!--  Detailed Text  -->
+                <textarea cols="30" rows="5" class="Texto_DA_CAIXA" id="jason_Infy_of_task_two" >  
+                     
+                    Gostaria de ter começado está história à moda dos contos de fada. Teria gostado de dizer:
+                    "Era uma vez um pequeno príncipe que habitava um planeta pouco maior que ele, e que tinha 
+                    necessidade de um amigo..." 
+                    
+                    Para aqueles que compreendem a vida, isto pareceria sem dúvida muito mais verdadeiro.
+    
+                </textarea>    
+            
+                </details>
+                <!--    Nova  Atualizar         -->
+                <br> [💌] NEW TASK  : <br>  <input  type="radio"  > <br>  
+                
+    
+            </div>
+    
+        
+        </section>
+         
+
+
+    </main>
+    
+    
+
+
+    <script>
+              
+        /* - - - - - - - - <🐶> : Menu Navbar   - - - -- - - -   */ 
+              
+        class MobileNavbar { constructor(mobileMenu, navList, navLinks) { this.mobileMenu = document.querySelector(mobileMenu); this.navList = document.querySelector(navList); this.navLinks = document.querySelectorAll(navLinks); this.activeClass = "active"; this.handleClick = this.handleClick.bind(this); }
+         animateLinks() { this.navLinks.forEach((link, index) => { link.style.animation ? (link.style.animation = "") : (link.style.animation = `navLinkFade 0.5s ease forwards ${ index / 7 + 0.3 }s`); }); }
+         handleClick() { this.navList.classList.toggle(this.activeClass); this.mobileMenu.classList.toggle(this.activeClass); this.animateLinks(); }
+         addClickEvent() { this.mobileMenu.addEventListener("click", this.handleClick);}
+         init() { if (this.mobileMenu) { this.addClickEvent();} return this; }
+        }
+
+        const mobileNavbar = new MobileNavbar( ".mobile-menu", ".nav-list",".nav-list li",);
+        mobileNavbar.init();
+
+        /* - - - - - - - - </🐶> : Menu Navbar - - - - - - - -   */
+
+        /* - - - - - - - - <🐶> : Functionality   - - - -- - - - */
+
+        function refresh_pag() {
+            location.reload();
+            //var refresh_pag = document.getElementById("refresh_pag");
+            // refresh_pag.addEventListener("click",()=>{
+
+            // });
+            
+        }
+
+        /**/
+        /* - - - - - - - - <🐶> : JavaScript JASON CRUD VERSION-ONE: Create,Read,Update,Delet IN Local Storege   - - - -- - - -   */
+        
+        // <🐼> Variaveis 
+
+            // let StoredDataJson = [];
+            // let two_PDO_CON = JSON.parse(PDO_CON);
+            // JSON.parse(StoredDataJson); // ;
+            // StoredDataJson = JSON.parse(PDO_CON);
+
+            
+            
+            // 🐬 < VARIÁVEIS – DATABASE > 
+
+                let Db_Name_Json = "JSON_DataBase";
+                // const TWOO_PDO_CON = [localStorage.getItem(Db_Name_Json)];
+                let PDO_CON = [(JSON.parse(localStorage.getItem(Db_Name_Json)))] ;
+                // PDO_CON = TWOO_PDO_CON ;
+                // (localStorage.getItem(Db_Name_Json)) ; localStorage.getItem(Db_Name_Json) ;
+                
+                let StoredDataJson = [];
+                
+                let JsonRegister_Array = [];
+
+                // StoredDataJson
+                // 1 - one  2 - two 3 - three  4 - four 5 - five 6 - six 7 - seven 8 - eight 9 - nine 10 - ten
+                // DB_VALUEONE ; DB_VALUETWO ; DB_VALUETHREE ; DB_VALUEFOUR ; DB_VALUEFIVE
+                // `${index}` ${DB_VALUEONE} ;  ${DB_VALUETWO} ; ${DB_VALUETHREE} ; ${DB_VALUEFOUR} ; ${DB_VALUEFIVE}  
+                        
+                let pkmx = 10000; let pkmy = 20000;  let pkmz = 30000;  let pkma = 40000; let pkmb = 50000;
+                let pkmc = 60000; let pkmd = 70000;  let pkmg = 80000;  const nunu = 2;
+            
+                const DB_VALUEONE   ='jason_daty_of_tsk'; const DB_VALUETWO   ='jason_namy_of_tsk'; 
+                const DB_VALUETHREE ='jason_time_of_tsk'; const DB_VALUEFOUR  ='jason_Info_of_tsk';
+                const DB_VALUEFIVE  ='jason_numb_of_tsk'; 
+                const DB_VALUESIX   ='jason_Anyy_of_tsk';
+                const DB_VALUESEVEN ='jason_Anyy_of_tsk'; const DB_VALUEEIGTH ='jason_Anyy_of_tsk';
+                const DB_VALUENINE  ='jason_Anyy_of_tsk'; const DB_VALUETEN   ='jason_Anyy_of_tsk';
+
+                // `${index}${pkmx}`   `${index}`
+                // DB_VALUEONE ; DB_VALUETWO ; DB_VALUETHREE ; DB_VALUEFOUR ; DB_VALUEFIVE
+                // `${index}${pkmx}`   `${index}` 
+                
+
+            // 🐬 < / VARIÁVEIS DATABASE >
+
+            
+            let JsonExRegister = {
+
+                DB_VALUEONE   : "JSON_Date_Of_Task",
+                DB_VALUETWO   : "JSON_Name_Of_Task",
+                DB_VALUETHREE : "JSON_Time_Of_Task",
+                DB_VALUEFOUR  : "JSON_Info_Of_Task",
+                DB_VALUEFIVE  : "JSON_Numb_Of_Task"
+                
+            };
+
+            let JsonExRegistertwo = JSON.stringify(JsonExRegister);
+
+            
+
+        
+        // </🐼> Variaveis 
+        
+ 
+
+        // <🐼> JSON – Create – DATABASE    / let function  
+             
+            function JsonCreateDatebase () {
+                if( (localStorage.getItem(Db_Name_Json)) === null ) {
+                    
+                    localStorage.setItem(Db_Name_Json,JsonExRegistertwo);
+                    // StoredDataJson.push(localStorage.setItem(Db_Name_Json,JsonExRegistertwo));
+
+                };
+
+                if( ( localStorage.getItem(Db_Name_Json)) != null ) {
+                    
+                    let xtx = 0; let xyy = 0;
+
+                    // console.log(PDO_CON[0][6]); 
+                    
+                    // xtx < PDO_CON.length { xtx < PDO_CON.length }
+                    
+                    for( xtx = 0 ; PDO_CON[0][xtx] != null ; xtx++ ) {
+                        
+                        var TWO_PDO_CON = [];
+                        var TWO_PDO_CON = PDO_CON[0][xtx]; 
+                        StoredDataJson[xtx] = TWO_PDO_CON;
+
+                    };
+                    
+                };
+
+            }; 
+            
+            JsonCreateDatebase ();
+            
+             
+
+        // </🐼> JSON – Create – DATABASE  
+        
+        // <🐼> JSON – Create – Backup_ – DATABASE    
+             
+        function Backup_JsonCreateDatebase () {
+            var B_Backup = document.getElementById(B_Backup);
+            B_Backup.addEventListener("click", function () {
+                let Db_Backup_Name_Json = "Backup_JSON_DataBase";
+                localStorage.setItem(Db_Backup_Name_Json,JSON.stringify(StoredDataJson));
+
+            }); 
+                
+        };
+                 
+
+        // </🐼> JSON – Create – Backup_ – DATABASE  
+
+        
+        
+        // <🐼> : JSON – CRUD – Create  
+
+            function Json_Set_LocalStorage (JsonRegister) {
+                localStorage.setItem(Db_Name_Json,JsonRegister);
+            }; 
+
+            function Json_Set_LocalStorage_Object (JsonRegister) {
+                localStorage.setItem(Db_Name_Json,JSON.stringify(JsonRegister));
+            }; 
+
+            function Json_Create_Crud_Object(JasonRegister) {
+                // localStorage.setItem(Db_Name_Json,JSON.stringify(JsonRegister));
+                // Json_Set_LocalStorage_Object(StoredDataJson);
+                StoredDataJson.push(JasonRegister);
+                Json_Set_LocalStorage_Object(StoredDataJson);
+            };
+
+      
+        // </🐼> JSON – CRUD – Create 
+    
+        // <🐼> : JSON - CRUD -  Read
+
+            // 🐓 🐧  function {}; let  = () =>{}
+            let Json_Get_LocalStorage = () => {
+                // const dadosDoLocalStorage = JSON.parse(localStorage.getItem('JSON_DataBase')); 
+                // const dadosDoLocalStorage = localStorage.getItem('JSON_DataBase');
+                // const twodadosDoLocalStorage = JSON.parse(dadosDoLocalStorage);
+                // return (twodadosDoLocalStorage) ;
+                
+                // const dadosDoLocalStorage = localStorage.getItem(Db_Name_Json);
+                // return dadosDoLocalStorage ? JSON.parse(dadosDoLocalStorage) : [];
+            };
+
+        
+        // </🐼> : JSON – CRUD – Read  
+
+
+        // <🐼> :  JSON – CRUD – Update   
+            function Json_Crud_Update_Object(JasonRegister,index) {
+                StoredDataJson[index] = JasonRegister;
+                Json_Set_LocalStorage_Object(StoredDataJson);
+            };    
+  
+        // </🐼> :  JSON – CRUD – Update  
+
+        
+        // <🐼> JSON – CRUD – DELETE 
+        function Json_Crud_Delet_Object(JasonRegister,index) {
+            // StoredDataJson[index] = JasonRegister;
+            
+            StoredDataJson.splice(index,1);
+            Json_Set_LocalStorage_Object(StoredDataJson);
+        }; 
+        // </🐼> JSON – CRUD – DELETE   
+
+       /* - - - - - - - - </🐶> JavaScript JASON CRUD: Create,Read,Update,Delet IN Local Storege   - - - -- - - -   */
+       
+       
+       /* - - - - - - - - <🐶> JavaScript JASON CRUD EVENTS   - - - -- - - -   */
+
+        // <🐼> : JSON – CRUD – Create
+            function JsonSaveRegister () {
+                // if (isValidFields()){};
+                var client = { 
+                    DB_VALUEONE   : document.getElementById("jason_daty_of_task").value,
+                    DB_VALUETWO   : document.getElementById("jason_name_of_task").value,
+                    DB_VALUETHREE : document.getElementById("jason_tyme_of_task").value,
+                    DB_VALUEFOUR  : document.getElementById("jason_Infy_of_task").value,
+                    DB_VALUEFIVE  : document.getElementById("jason_number_of_task").value
+                };
+            
+                Json_Create_Crud_Object(client);
+                // clearfields
+          
+            };
+
+        // </🐼> : JSON – CRUD – Create
+
+
+        function JsonSaveRegister_KJJ () {
+            // if (isValidFields()){};
+
+            let Register_Of_TestTwo = window.document.getElementById("test2");
+            // DB_VALUEONE ; DB_VALUETWO ; DB_VALUETHREE ; DB_VALUEFOUR ; DB_VALUEFIVE
+            // `${index}` ${DB_VALUEONE} ;  ${DB_VALUETWO} ; ${DB_VALUETHREE} ; ${DB_VALUEFOUR} ; ${DB_VALUEFIVE}  
+            
+
+            // <🐼>
+                
+                // 2023-12-13   
+                var daty4 = window.document.getElementById("daty15").value ; 
+                // kuiojhgtwo.innerText = ` ${daty4} ` ;
+                // 2023        
+                var daty2 = window.document.getElementById("daty15") ; 
+                var daty3 = Number.parseInt( daty2.value );  
+                // uiojhgtwo.innerText = ` ${daty3} `; 
+                // 15:00        
+                var timy3 = window.document.getElementById("timy15").value ;
+                // Nomes 
+                var Namy33 = window.document.getElementById("jason_name_of_task_two").value ;
+                // Informações
+                var Infy33 = window.document.getElementById("jason_Infy_of_task_two").value ;
+                // lily = `${daty4}` jason_Infy_of_task_two ; jason_name_of_task
+                
+            // <🐼>
+            
+            // <🐼>
+                var client = { 
+                    DB_VALUEONE   : daty4,
+                    DB_VALUETWO   : Namy33,
+                    DB_VALUETHREE : timy3,
+                    DB_VALUEFOUR  : Infy33,
+                    DB_VALUEFIVE  : nunu
+                };
+            // <🐼>
+            
+            Json_Create_Crud_Object(client);
+            // clearfields
+            location.reload();
+
+        };
+
+
+        // <🐼> JSON – EVENTS – Read – Day 
+            function JSON_Read_Register_Lily (lily) {
+            
+
+                let Register_Of_Day = window.document.getElementById("Register_Of_Day");
+                // DB_VALUEONE ; DB_VALUETWO ; DB_VALUETHREE ; DB_VALUEFOUR ; DB_VALUEFIVE
+                // `${index}` ${DB_VALUEONE} ;  ${DB_VALUETWO} ; ${DB_VALUETHREE} ; ${DB_VALUEFOUR} ; ${DB_VALUEFIVE}  
+            
+                let Register_Of_ANU = window.document.getElementById("test3");
+                /* 2023-12-13 */ 
+                let daty4 = window.document.getElementById("daty10").value ;   
+                kuiojhg.innerText = ` ${daty4} ` ;
+                /* 2023 */  
+                let daty2 = window.document.getElementById("daty10") ; 
+                let daty3 = Number.parseInt( daty2.value );  
+                uiojhg.innerText = ` ${daty3} `; 
+            
+                lily = `${daty4}` ; 
+            
+                // Só Acontecera quando nosso botão for apertado --> index,pkmx,pkmy,pkmz,pkma,pkmb,pkmc
+                // var GYM_OMEGA_LIA = `Atualizar${index}${pkmc}`; 
+                // StoredDataJson[xtx]
+            
+                StoredDataJson.forEach(
+                    function Me_Mostre_Day_LiLy(item,index,array) {
+
+                        if( item.DB_VALUEONE == lily ) {
+
+                            Register_Of_Day.insertAdjacentHTML('beforeend',
+                            `
+                                
+                                <div class="dive_tarefas" id="" >
+                                <!--  Pedido de Mickey  -->
+                                <details> 
+                                <summary>  
+                                👨‍💻➡️ <input type="text" id="${DB_VALUETWO}${index}${pkmy}" value="${item.DB_VALUETWO}" > <br>
+                                🕒➡️ <input type="time" id="${DB_VALUETHREE}${index}${pkmz}"  value="${item.DB_VALUETHREE}" >  <br> 
+                                📅➡️ <input type="date"  type="date" id="${DB_VALUEONE}${index}${pkmx}" value="${item.DB_VALUEONE}" />  <br> 
+                                        
+                                <!--  SSTATUS : Emojis : Give Whatever Meaning You Want 1 > 10 -->
+                                <br>
+                                <input value ="✍️" type="button" onclick="" id="sstatus_1">   <!--  Request_Details    -->
+                                <input value ="👨‍💻" type="button" onclick="" id="sstatus_2">   <!--      Build_         -->
+                                <input value ="💌" type="button" onclick="" id="sstatus_3">   <!--  Sent_To_Client     -->
+                                <input value ="📧" type="button" onclick="" id="sstatus_4">   <!--  Sent_To_Production -->
+                                <input value ="🚚" type="button" onclick="" id="sstatus_5">   <!--     IN_Production   -->
+                                <input value ="📦" type="button" onclick="" id="sstatus_6">   <!--      STORED         -->
+                                <input value ="🐼" type="button" id="${DB_VALUEFIVE}${index}${pkmb}" value="2"" >    <!--     Anything        -->
+                                        
+                                </summary>
+         
+                                <!--  Detailed Text  -->
+                                <textarea cols="30" rows="5" class="Texto_DA_CAIXA" id="${DB_VALUEFOUR}${index}${pkma}" > ${item.DB_VALUEFOUR} </textarea>    
+                                    
+                                </details>
+                                <!-- UPDATE <h3></h3>  -->
+                                <br> [💌➡️] TO UPDATE TASK  : <br> <input  type="radio" class="containery" id="Atualizar${index}${pkmc}" onclick="JSON_Read_Register_Lily_SAVE(${index},${pkmx},${pkmy},${pkmz},${pkma},${pkmb},${pkmc},${pkmd} ) " >  <br>  
+                                <!--  Remove  -->
+                                <br> [☠️➡️] TO ROMOVE TASK : <br> <input type="radio" class="containery" value ="☠️"  id="Delet${index}${pkmd}" onclick="Json_Delet_Register_Especial(${index},${pkmx},${pkmy},${pkmz},${pkma},${pkmb},${pkmc},${pkmd} ) " > <br> 
+
+                            </div>
+                            
+                            <br> <br> <br>
+                                 
+                        
+                        `);
+                            
+                        };
+                        
+                        pkmx += 1; pkmy += 1; pkmz += 1; pkma += 1; pkmb += 1; pkmc += 1; pkmd += 1; pkmg += 1;
+                        
+                    }
+                
+                ); 
+             
+
+
+            };
+
+        // </🐼>  JSON – EVENTS – Read – Day
+
+       
+        // <🐼> JSON – EVENTS – Read – ALL 
+            function JSON_Read_Register_Lily_ALL (lily) {
+            
+                // Register_Of_ANO
+                let Register_Of_Day = window.document.getElementById("Register_Of_Day");
+                let Register_Of_ANO = window.document.getElementById("Register_Of_ANO");
+                // DB_VALUEONE ; DB_VALUETWO ; DB_VALUETHREE ; DB_VALUEFOUR ; DB_VALUEFIVE
+                // `${index}` ${DB_VALUEONE} ;  ${DB_VALUETWO} ; ${DB_VALUETHREE} ; ${DB_VALUEFOUR} ; ${DB_VALUEFIVE}  
+            
+                let Register_Of_ANU = window.document.getElementById("test3");
+                /* 2023-12-13 */ 
+                let daty4 = window.document.getElementById("daty10").value ;   
+                kuiojhg.innerText = ` ${daty4} ` ;
+                /* 2023 */  
+                let daty2 = window.document.getElementById("daty10") ; 
+                let daty3 = Number.parseInt( daty2.value );  
+                uiojhg.innerText = ` ${daty3} `; 
+            
+                // lily = `${daty4}` ; 
+                lily = "ALL" ; 
+
+                // Só Acontecera quando nosso botão for apertado --> index,pkmx,pkmy,pkmz,pkma,pkmb,pkmc
+                // var GYM_OMEGA_LIA = `Atualizar${index}${pkmc}`; 
+                // StoredDataJson[xtx]
+            
+                StoredDataJson.forEach(
+                    function Me_Mostre_Day_LiLy(item,index,array) {
+
+                        if( lily == "ALL" ) {
+
+                            Register_Of_ANO.insertAdjacentHTML('beforeend',
+                            `
+                                
+                                <div class="dive_tarefas" id="" >
+                                    <!--  Pedido de Mickey  -->
+                                    <details> 
+                                    <summary>  
+                                        👨‍💻➡️ <input type="text" id="${DB_VALUETWO}${index}${pkmy}" value="${item.DB_VALUETWO}" > <br> 
+                                        🕒➡️ <input type="time" id="${DB_VALUETHREE}${index}${pkmz}"  value="${item.DB_VALUETHREE}" > <br>  
+                                        📅➡️ <input type="date"  type="date" id="${DB_VALUEONE}${index}${pkmx}" value="${item.DB_VALUEONE}" /> <br> 
+                                        
+                                    <!--  SSTATUS : Emojis : Give Whatever Meaning You Want 1 > 10 -->
+                                    <br>
+                                    <input value ="✍️" type="button" onclick="" id="sstatus_1">   <!--  Request_Details    -->
+                                    <input value ="👨‍💻" type="button" onclick="" id="sstatus_2">   <!--      Build_         -->
+                                    <input value ="💌" type="button" onclick="" id="sstatus_3">   <!--  Sent_To_Client     -->
+                                    <input value ="📧" type="button" onclick="" id="sstatus_4">   <!--  Sent_To_Production -->
+                                    <input value ="🚚" type="button" onclick="" id="sstatus_5">   <!--     IN_Production   -->
+                                    <input value ="📦" type="button" onclick="" id="sstatus_6">   <!--      STORED         -->
+                                    <input value ="🐼" type="button" id="${DB_VALUEFIVE}${index}${pkmb}" value="2"" >                            <!--     Anything        -->
+                                        
+                                    </summary>
+         
+                                    <!--  Detailed Text  -->
+                                    <textarea cols="30" rows="5" class="Texto_DA_CAIXA" id="${DB_VALUEFOUR}${index}${pkma}" > ${item.DB_VALUEFOUR} </textarea>    
+                                    
+                                    </details>
+                                    <!-- UPDATE -->
+                                    <br> [💌➡️] TO UPDATE TASK  : <br> <input  type="radio" class="containery" id="Atualizar${index}${pkmc}" onclick="JSON_Read_Register_Lily_SAVE(${index},${pkmx},${pkmy},${pkmz},${pkma},${pkmb},${pkmc},${pkmd} ) " >  <br>  
+                                    <!--  Remove  -->
+                                    <br> [☠️➡️] TO ROMOVE TASK : <br> <input type="radio" class="containery" value ="☠️"  id="Delet${index}${pkmd}" onclick="Json_Delet_Register_Especial(${index},${pkmx},${pkmy},${pkmz},${pkma},${pkmb},${pkmc},${pkmd} ) " > <br> 
+
+                                </div>
+                            
+                                <br> <br> <br>
+                                 
+                        
+                            `);
+                            
+                        };
+                        
+                        pkmx += 1; pkmy += 1; pkmz += 1; pkma += 1; pkmb += 1; pkmc += 1; pkmd += 1; pkmg += 1;
+                        
+                    }
+                
+                ); 
+             
+
+
+            };
+    
+        // </🐼>  JSON – EVENTS – Read – Day – ALL
+       
+       // <🐼> JSON – EVENTS – Read – Day – SAVE
+       
+        function JSON_Read_Register_Lily_SAVE (index,pkmx,pkmy,pkmz,pkma,pkmb,pkmc,pkmd) {
+
+            var GYM_OMEGA = `Atualizar${index}${pkmc}`;
+            var B_ATUALIZAR = document.getElementById(GYM_OMEGA);
+            B_ATUALIZAR.addEventListener("click", function () {
+                
+                // index += 1;
+                var atualizar = [];
+                var GYM_Cristal = `${DB_VALUEONE}${index}${pkmx}`;
+                var GYM_Gold    = `${DB_VALUETWO}${index}${pkmy}`;
+                var GYM_Silver  = `${DB_VALUETHREE}${index}${pkmz}`;
+                var GYM_Perl    = `${DB_VALUEFOUR}${index}${pkma}`;
+                var GYM_Ruby    = `${DB_VALUEFIVE}${index}${pkmb}`;
+                
+                // `${index}`
+
+                var client = {
+                    
+                    DB_VALUEONE   : document.getElementById(`${GYM_Cristal}`).value,
+                    DB_VALUETWO   : document.getElementById(`${GYM_Gold}`).value,
+                    DB_VALUETHREE : document.getElementById(`${GYM_Silver}`).value,
+                    DB_VALUEFOUR  : document.getElementById(`${GYM_Perl}`).value,
+                    DB_VALUEFIVE  : document.getElementById(`${GYM_Ruby}`).value
+
+                };
+
+                Json_Crud_Update_Object(client,index);    
+                
+
+            }); 
+            
+
+        };
+
+       // </🐼>  JSON – EVENTS – Read – Day – SAVE 
+       
+        
+
+
+        /* <🐼> : JSON_Update_Register  */
+        function JSON_creat_BR () {
+          const newRow = document.createElement('br');
+        }; 
+
+        function JSON_Creat_Jasonk () {
+          const newRow = document.createElement('br');
+        }; 
+       
+
+        // ----------------------- <🐼> JSON – EVENTS – Save – Especial – NOT USED -----------------------
+        
+        // <🐼> JSON – EVENTS – Save – Especial – NOT USED 
+            function Json_Save_Register_Especial (index,pkmx,pkmy,pkmz,pkma,pkmb,pkmc,pkmd) {
+            
+                // DB_VALUEONE ; DB_VALUETWO ; DB_VALUETHREE ; DB_VALUEFOUR ; DB_VALUEFIVE
+                // `${index}` ${DB_VALUEONE} ;  ${DB_VALUETWO} ; ${DB_VALUETHREE} ; ${DB_VALUEFOUR} ; ${DB_VALUEFIVE}  
+            
+                let Register_Of_ANU = window.document.getElementById("test3");
+
+                // Só Acontecera quando nosso botão for apertado --> index,pkmx,pkmy,pkmz,pkma,pkmb,pkmc
+                var GYM_OMEGA = `Atualizar${index}${pkmc}`;
+                var B_ATUALIZAR = document.getElementById(GYM_OMEGA);
+                
+                // index += 1;
+                var atualizar = [];
+                var GYM_Cristal = `${DB_VALUEONE}${index}${pkmx}`;
+                var GYM_Gold    = `${DB_VALUETWO}${index}${pkmy}`;
+                var GYM_Silver  = `${DB_VALUETHREE}${index}${pkmz}`;
+                var GYM_Perl    = `${DB_VALUEFOUR}${index}${pkma}`;
+                var GYM_Ruby    = `${DB_VALUEFIVE}${index}${pkmb}`;
+                
+
+                var client = {
+                    
+                    DB_VALUEONE   : document.getElementById(`${GYM_Cristal}`).value,
+                    DB_VALUETWO   : document.getElementById(`${GYM_Gold}`).value,
+                    DB_VALUETHREE : document.getElementById(`${GYM_Silver}`).value,
+                    DB_VALUEFOUR  : document.getElementById(`${GYM_Perl}`).value,
+                    DB_VALUEFIVE  : document.getElementById(`${GYM_Ruby}`).value
+
+                };
+
+                Json_Create_Crud_Object(client);    
+
+            };
+        // </🐼> JSON – EVENTS – Save – Especial
+
+        // <🐼> JSON – EVENTS – Read – ALL
+        function JSON_Read_Register () {
+            
+            var lily = "ALL";
+            let Register_Of_Day = window.document.getElementById("Register_Of_Day");
+            let Register_Of_ANO = window.document.getElementById("Register_Of_ANO");
+            
+            // DB_VALUEONE ; DB_VALUETWO ; DB_VALUETHREE ; DB_VALUEFOUR ; DB_VALUEFIVE
+            // `${index}` ${DB_VALUEONE} ;  ${DB_VALUETWO} ; ${DB_VALUETHREE} ; ${DB_VALUEFOUR} ; ${DB_VALUEFIVE}  
+            
+             
+            if ( lily == "ALL") { 
+                StoredDataJson.forEach(
+                    function Me_Mostre_Tudo(item,index,array) {
+                        
+                        Register_Of_ANO.insertAdjacentHTML('beforeend',
+                        `
+
+                            <p> ${lily} ${pkmg} b propiedade  a  </p>
+                            <input type="text" id="${DB_VALUEONE}${index}${pkmx}" placeholder="${item.DB_VALUEONE}">
+                            <input type="text" id="${DB_VALUETWO}${index}${pkmy}" placeholder="${item.DB_VALUETWO}">
+                            <input type="text" id="${DB_VALUETHREE}${index}${pkmz}" placeholder="${item.DB_VALUETHREE}">
+                            <input type="text" id="${DB_VALUEFOUR}${index}${pkma}" placeholder="${item.DB_VALUEFOUR}">
+                            <input type="text" id="${DB_VALUEFIVE}${index}${pkmb}" placeholder="${item.DB_VALUEFIVE}">
+                            <br> 
+                            <input type="button" id="Atualizar${index}${pkmc}" value ="Atualizar" onclick="Json_Update_Register_Especial(${index},${pkmx},${pkmy},${pkmz},${pkma},${pkmb},${pkmc},${pkmd} )" >
+                            <br> 
+                            <input type="button" id="Delet${index}${pkmd}" value ="Deletar" onclick="Json_Delet_Register_Especial(${index},${pkmx},${pkmy},${pkmz},${pkma},${pkmb},${pkmc},${pkmd} )">
+                        
+                        `);
+                        pkmx += 1; pkmy += 1; pkmz += 1; pkma += 1; pkmb += 1; pkmc += 1; pkmd += 1; pkmg += 1;
+
+                    }
+                
+                ); 
+            };
+            
+            if ( lily !="ALL" ) { 
+                Register_Of_Day.insertAdjacentHTML('beforeend',`<p> ${lily2[0]} propiedade  a  </p>`);
+                JsonRegister_Array[0][1] = (lily[0].json_name_of_task); 
+                JsonRegister_Array[0][2] = (lily[0].json_daty_of_task);
+                JsonRegister_Array[0][3] = (lily[0].json_info_of_task);
+                JsonRegister_Array[0][4] = (lily[0].json_daty_of_task);
+            }
+
+
+        };
+        
+        // JSON_Read_Register (); 
+        // </🐼> JSON – EVENTS – Read – ALL
+
+       
+        // - - - - - - aaa- - - - - - - - 
+        /* - - - - - - - - <🐶> NOT USED  - - - -- - - -   */
+
+        // <🐼> JSON – EVENTS – Read – Day  – Lilian
+        function JSON_Read_Register_Lilian (lily) {
+            
+            // setInterval(refreshTime, 1);
+            let Register_Of_Day = window.document.getElementById("Register_Of_Day");
+            // DB_VALUEONE ; DB_VALUETWO ;   DB_VALUETHREE ;  DB_VALUEFOUR ;    DB_VALUEFIVE
+            // `${index}` ${DB_VALUEONE} ;  ${DB_VALUETWO} ; ${DB_VALUETHREE} ; ${DB_VALUEFOUR} ; ${DB_VALUEFIVE}  
+            
+            let Register_Of_ANU = window.document.getElementById("test3");
+            /* 2023-12-13 */ 
+            let daty4 = window.document.getElementById("daty10").value ;   
+            kuiojhg.innerText = `${daty4}`;
+            /* 2023 */  
+            let daty2 = window.document.getElementById("daty10") ; 
+            let daty3 = Number.parseInt( daty2.value );  
+            uiojhg.innerText = `${daty3}`; 
+            
+            lily = `${daty4}` ; 
+            
+            // Só Acontecera quando nosso botão for apertado --> index,pkmx,pkmy,pkmz,pkma,pkmb,pkmc
+            // var GYM_OMEGA_LIA = `Atualizar${index}${pkmc}`; 
+            // StoredDataJson[xtx]
+            var B_ATUALIZAR = document.getElementById("GYM_OMEGA_Lilian");
+            StoredDataJson.forEach(
+                function Me_Mostre_Day(item,index) {
+                    if( item.DB_VALUEONE == lily ) {
+                        Register_Of_Day.insertAdjacentHTML('beforeend',
+                        `
+                            <p> ${lily} ${pkmg} b propiedade  a  </p>
+                            <input type="text" id="${DB_VALUEONE}${index}${pkmx}" placeholder="${item.DB_VALUEONE}">
+                            <input type="text" id="${DB_VALUETWO}${index}${pkmy}" placeholder="${item.DB_VALUETWO}">
+                            <input type="text" id="${DB_VALUETHREE}${index}${pkmz}" placeholder="${item.DB_VALUETHREE}">
+                            <input type="text" id="${DB_VALUEFOUR}${index}${pkma}" placeholder="${item.DB_VALUEFOUR}">
+                            <input type="text" id="${DB_VALUEFIVE}${index}${pkmb}" placeholder="${item.DB_VALUEFIVE}">
+                            <br> 
+                            <input type="button" id="Atualizar${index}${pkmc}" value ="Atualizar" onclick="Json_Update_Register_Especial(${index},${pkmx},${pkmy},${pkmz},${pkma},${pkmb},${pkmc},${pkmd} )" >
+                            <br> 
+                            <input type="button" id="Delet${index}${pkmd}" value ="Deletar" onclick="Json_Delet_Register_Especial(${index},${pkmx},${pkmy},${pkmz},${pkma},${pkmb},${pkmc},${pkmd} )">
+                        
+                        `);
+                        pkmx += 1; pkmy += 1; pkmz += 1; pkma += 1; pkmb += 1; pkmc += 1; pkmd += 1; pkmg += 1;
+
+                    };
+
+                        
+                }); 
+            
+
+
+        };
+
+       // </🐼>  JSON – EVENTS – Read – Day 
+
+        function Json_Update_Register_Especial (index,pkmx,pkmy,pkmz,pkma,pkmb,pkmc,pkmd) {
+            
+            // DB_VALUEONE ; DB_VALUETWO ; DB_VALUETHREE ; DB_VALUEFOUR ; DB_VALUEFIVE
+            // `${index}` ${DB_VALUEONE} ;  ${DB_VALUETWO} ; ${DB_VALUETHREE} ; ${DB_VALUEFOUR} ; ${DB_VALUEFIVE}  
+            
+            let Register_Of_ANU = window.document.getElementById("test3");
+
+            // Só Acontecera quando nosso botão for apertado --> index,pkmx,pkmy,pkmz,pkma,pkmb,pkmc
+            var GYM_OMEGA = `Atualizar${index}${pkmc}`;
+            var B_ATUALIZAR = document.getElementById(GYM_OMEGA);
+            
+                
+            // index += 1;
+            var atualizar = [];
+            var GYM_Cristal = `${DB_VALUEONE}${index}${pkmx}`;
+            var GYM_Gold    = `${DB_VALUETWO}${index}${pkmy}`;
+            var GYM_Silver  = `${DB_VALUETHREE}${index}${pkmz}`;
+            var GYM_Perl    = `${DB_VALUEFOUR}${index}${pkma}`;
+            var GYM_Ruby    = `${DB_VALUEFIVE}${index}${pkmb}`;
+                
+            // `${index}`
+
+            
+            var client = {
+                    
+                DB_VALUEONE   : document.getElementById(`${GYM_Cristal}`).value,
+                DB_VALUETWO   : document.getElementById(`${GYM_Gold}`).value,
+                DB_VALUETHREE : document.getElementById(`${GYM_Silver}`).value,
+                DB_VALUEFOUR  : document.getElementById(`${GYM_Perl}`).value,
+                DB_VALUEFIVE  : document.getElementById(`${GYM_Ruby}`).value
+
+            };
+
+            Json_Crud_Update_Object(client,index);    
+            // location.reload(); location.reload(); location.reload();
+             
+        };
+
+        // <🐼> JSON – EVENTS – DELET – 
+
+        function Json_Delet_Register_Especial (index,pkmx,pkmy,pkmz,pkma,pkmb,pkmc,pkmd) {
+           
+            let Register_Of_ANU = window.document.getElementById("test3");
+
+            // Só Acontecera quando nosso botão for apertado --> index,pkmx,pkmy,pkmz,pkma,pkmb,pkmc
+            var GYM_OMEGA = `Delet${index}${pkmd}`;
+            var B_ATUALIZAR = document.getElementById(GYM_OMEGA);
+                
+            // index += 1;
+            var atualizar = [];
+            var GYM_Cristal = `${DB_VALUEONE}${index}${pkmx}`;
+            var GYM_Gold    = `${DB_VALUETWO}${index}${pkmy}`;
+            var GYM_Silver  = `${DB_VALUETHREE}${index}${pkmz}`;
+            var GYM_Perl    = `${DB_VALUEFOUR}${index}${pkma}`;
+            var GYM_Ruby    = `${DB_VALUEFIVE}${index}${pkmb}`;
+
+
+            var client = {
+                    
+                DB_VALUEONE   : document.getElementById(`${GYM_Cristal}`).value,
+                DB_VALUETWO   : document.getElementById(`${GYM_Gold}`).value,
+                DB_VALUETHREE : document.getElementById(`${GYM_Silver}`).value,
+                DB_VALUEFOUR  : document.getElementById(`${GYM_Perl}`).value,
+                DB_VALUEFIVE  : document.getElementById(`${GYM_Ruby}`).value
+
+            };
+
+            Json_Crud_Delet_Object(client,index);    
+ 
+
+        };
+        // <🐼> JSON – EVENTS – DELET –
+        
+        /* - - - - - - - - </🐶> NOT USED  - - - -- - - -   */
+
+        // - - - - - - - - - - - - - -  
+
+        
+        // </🐼> : JSON_Save_Register  
+
+        let JSON_Updatee_Register = () => {
+          
+
+        };
+
+       /* - - - - - - - - </🐶> JavaScript JASON CRUD Events   - - - -- - - -   */
+       
+        /* - - - - - - - - <🐶> Progama   - - - - - - - -   */
+        
+        /*
+        function Register_Of_Day(Db_Name_Jsondd) {
+            // var JSON_Read_Register3 = Json_Get_LocalStorage() ;
+
+            for( x=0 ; x<=10 ; x++ ) {
+                var Register_Of_Day = window.document.getElementById("Register_Of_Day");
+                // var JSON_Read_Register2 = JSON_Read_Register (Db_Name_Jsondd,JsonRegister,index);
+                Register_Of_Day.insertAdjacentHTML('beforeend',
+                    `<br> <input type="text" name="a" id="x${x}"> ${x} ${JSON_Read_Register2.json_name_of_task1} `
+                
+                )
+
+            };    
+             
+        };
+        */
+
+        /* - - - - - - - - </🐶> Progama   - - - - - - - -   */
+    
+
+
+    </script>    
+</body>
+</html>
